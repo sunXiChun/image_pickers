@@ -135,6 +135,7 @@ static NSString *const CHANNEL_NAME = @"flutter/image_pickers";
         configuration.allowSelectOriginal =NO;//不选择原图
         configuration.allowEditImage =enableCrop;
         configuration.cellCornerRadio =5;
+        configuration.columnCount = 3;
         configuration.editImageConfiguration.tools_objc=@[@1];
         configuration.editImageConfiguration.clipRatios=@[[[ZLImageClipRatio alloc]initWithTitle:@"" whRatio:((float)width/(float)height) isCircle:false]];
         
