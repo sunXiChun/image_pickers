@@ -268,7 +268,7 @@ static NSString *const CHANNEL_NAME = @"flutter/image_pickers";
                             AVURLAsset *urlAsset = (AVURLAsset *)asset;
                             NSURL *url = urlAsset.URL;
                             if (url == nil) {
-                                result(@[@"thumbPath":@"", @"path":@""]);
+                                result(@[@{@"thumbPath":@"", @"path":@""}]);
                                 return ;
                             }
                             NSString *subString = [url.absoluteString substringFromIndex:7];
